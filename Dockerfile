@@ -1,6 +1,6 @@
 FROM openjdk:17-alpine
 
-RUN apk add --no-cache curl
+RUN apk add --no-cache curl libgcc
 
 WORKDIR /opt/lavalink
 
