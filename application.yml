@@ -1,10 +1,12 @@
 server:
-  port: 10000
+  port: ${PORT:10000} # Usa la variable de entorno PORT (que Render asigna) o 10000 si no existe
+
 spring:
   main:
     banner-mode: "off"
   application:
     name: Lavalink
+
 lavalink:
   server:
     password: "youshallnotpass"
@@ -21,8 +23,10 @@ lavalink:
     playerUpdateInterval: 5
     youtubeSearchEnabled: true
     gc-warnings: true
+
 metrics:
   prometheus:
     enabled: false
+
 sentry:
   dsn: ""
