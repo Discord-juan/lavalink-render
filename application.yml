@@ -3,7 +3,7 @@ server:
 
 lavalink:
   server:
-    password: "juansiwnl"
+    password: "1234"
     sources:
       youtube: true
       soundcloud: true
