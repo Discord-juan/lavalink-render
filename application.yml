@@ -5,11 +5,13 @@ lavalink:
   server:
     password: "1234"
     sources:
-      youtube: false   # ⚠️ Desactiva el extractor interno
+      youtube: false
       soundcloud: true
       http: true
       twitch: true
       bandcamp: true
+    plugins:
+      allow-remote: true
     bufferDurationMs: 400
     youtubeSearchEnabled: true
     youtubePlaylistLoadLimit: 6
