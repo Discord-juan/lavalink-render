@@ -5,7 +5,7 @@ lavalink:
   server:
     password: "1234"  # ← usá esto para la prueba
     sources:
-      youtube: true
+      youtube: false  # ← Desactivamos el extractor viejo (requerido para usar youtube-source)
       soundcloud: true
       http: true
       twitch: true
@@ -17,3 +17,5 @@ lavalink:
     resuming:
       enabled: false
     gc-warnings: true
+  plugins:
+    - "plugins/youtube-source-1.0.0.jar"  # ← Ruta al plugin YouTube externo
