@@ -5,7 +5,7 @@ lavalink:
   server:
     password: "1234"
     sources:
-      youtube: false   # ← Desactivamos el extractor viejo
+      youtube: false   # ⚠️ Desactiva el extractor interno
       soundcloud: true
       http: true
       twitch: true
@@ -17,7 +17,3 @@ lavalink:
     resuming:
       enabled: false
     gc-warnings: true
-
-  plugins:
-    - name: youtube
-      path: plugins/youtube-plugin-1.13.3.jar
